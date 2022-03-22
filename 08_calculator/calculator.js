@@ -19,10 +19,14 @@ const power = function(num1, num2) {
 };
 
 const factorial = function(num1) {
-    let num1Array = [...Array(num1 + 1).keys()];
-    num1Array.shift()
-    console.log(num1Array);
-    return num1Array.reduce((previousValue, currentValue) => previousValue * currentValue, 1);
+    let product = 1;
+
+    for (i = num1; i > 0; i--) {
+        product *= i;
+    }
+
+    return product;
+
 };
 
 // Do not edit below this line
