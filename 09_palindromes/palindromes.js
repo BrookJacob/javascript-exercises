@@ -1,6 +1,5 @@
 const palindromes = function(word) {
     word = word.replace(/[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]/g, "").replace(/\s/g, '').toLowerCase();
-    console.log(word.split('').reverse().join(''));
     return (word.split('').reverse().join('') == word);
 
 
